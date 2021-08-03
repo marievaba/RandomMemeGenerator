@@ -13,25 +13,22 @@
   <body>
     <div class="main-content">
       <h1 class="title">This is a random meme generator</h1>
-      <section class="feeling-selection">
-        <label for="feeling" class="feeling-text"></label>
-        <div class="slidecontainer">
-          <div class="emoticons">
-            <i id="first" class="far fa-frown first"></i>
-            <i id="second" class="far fa-meh second"></i>
-            <i id="third" class="far fa-smile third"></i>
-          </div>
-          <input 
-            type="range" min="1" max="100" value="50" class="slider" id="slider"
-            oninput="highlightEmoticon(this.value)"
-          >
+      <div class="slider-container">
+        <div class="emoticons">
+          <i id="first" class="far fa-frown first"></i>
+          <i id="second" class="far fa-meh second"></i>
+          <i id="third" class="far fa-smile third"></i>
         </div>
-      </section>
-        <button class="button" onClick="generando()" id="button" disabled>
-          show me the magic!
-        </button>
-      <br>
+        <input
+          type="range" min="1" max="100" value="50" class="slider" id="slider"
+          oninput="highlightEmoticon(this.value)"
+        >
+      </div>
+      <button class="button" onClick="generando()" id="button" disabled>
+        show me the magic!
+      </button>
       <div id="meme-img-container">
+        <div class="spacer"></div>
         <div id="loader"></div>
       </div>
     </div>
