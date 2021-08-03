@@ -2,8 +2,11 @@ function generando() {
   const randomNumber = Math.floor(Math.random() * 52);
   console.log(randomNumber);
   let imagePath = 'images/meme_' + randomNumber + '.jpg';
-  document.getElementById('loader').style.display = 'none';
-  document.getElementById('meme-img').innerHTML = '<img id="img" src="' + imagePath + '"/>';
+  let loaderElement = document.getElementById('loader');
+  if (loaderElement !== null) {
+    document.getElementById('loader').remove();
+  }
+  document.getElementById('meme-img-container').innerHTML = '<img id="meme-img" src="' + imagePath + '"/>';
 }
 
 function highlightEmoticon(sliderValue) {

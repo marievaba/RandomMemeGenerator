@@ -1,54 +1,41 @@
+html {
+  font-family: "Tangerine";
+  font-size: 48px;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, rgb(194, 255, 192), rgb(247, 164, 236));
+  background-size: cover;
+  margin: 0;
+}
+
+#meme-img-container {
+  width: 480px;
+  height: 480px;
+  margin: 40px auto;
+}
+
+#meme-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
 .title {
   color:black;
   margin-bottom: 0px;
   margin-top: 32px;
 }
 
-input, label {
-  display: block;
-  margin: auto;
-}
-
-input {
-  margin-top: 20px;
-  
-}
-
-html {
-  font-family:"Tangerine";
-  font-size: 48px;
-  height: 100%;
-}
-
-#meme-img {
-  width: 500px;
-  height: 500px;
-  margin: auto;
-  margin-top: 40px;
-}
-
-#meme-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  overflow: hidden;
-}
-
 .main-content {
+  height: 100%;
+  width: 70%;
   border: 20px;
   border-color: pink;
   border-style: outset;
   border-radius: 20px;
   padding: 50px 50px 50px 50px;
-  height: 890px;
-  margin: auto;
-  width: 80%;
+  margin: 40px auto;
   text-align: center;
-}
-
-body {
-  background-image: linear-gradient(to bottom right, rgb(194, 255, 192), rgb(247, 164, 236));
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: left top;
 }
