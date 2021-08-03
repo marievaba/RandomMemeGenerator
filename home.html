@@ -2,7 +2,7 @@
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css?family=Tangerine:300,400" rel="stylesheet">
-    <script type="text/javascript" src="meme-generator.js"></script>
+    <script type="text/javascript" src="js/meme-generator.js"></script>
     <link rel="stylesheet" type="text/css" 
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
@@ -23,16 +23,16 @@
           </div>
           <input 
             type="range" min="1" max="100" value="50" class="slider" id="slider"
-            oninput="highlightEmoticon(this.value)">
+            oninput="highlightEmoticon(this.value)"
+          >
         </div>
       </section>
         <button class="button" onClick="generando()" id="button" disabled>
           show me the magic!
         </button>
       <br>
-      <div class="loader" id="loader"></div>
-      <div class="meme-img" id="meme-img">
-      </div>
+      <div id="loader"></div>
+      <div id="meme-img"></div>
     </div>
   </body>
 </html>
