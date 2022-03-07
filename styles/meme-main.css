@@ -1,0 +1,47 @@
+html {
+  font-family: "Tangerine";
+  font-size: 48px;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, rgb(194, 255, 192), rgb(247, 164, 236));
+  background-size: cover;
+  margin: 40px auto;
+  min-height: 100vh;
+}
+
+#meme-img-container {
+  width: 480px;
+  height: 480px;
+  margin: 40px auto;
+}
+
+#meme-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.title {
+  color:black;
+  margin-bottom: 0px;
+  margin-top: 32px;
+}
+
+.main-content {
+  height: 100%;
+  width: 70%;
+  border: 20px;
+  border-color: pink;
+  border-style: outset;
+  border-radius: 20px;
+  padding: 50px 50px 50px 50px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.spacer {
+  padding-top: 150px;
+}

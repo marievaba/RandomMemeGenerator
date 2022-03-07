@@ -1,47 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Epilogue&display=swap');
+
 html {
-  font-family: "Tangerine";
-  font-size: 48px;
+  font-size: 10px;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 body {
-  background-image: linear-gradient(to bottom right, rgb(194, 255, 192), rgb(247, 164, 236));
+  font-family: 'Epilogue', sans-serif;
+  color: #000;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   background-size: cover;
-  margin: 40px auto;
+  margin: 0;
+}
+
+.main {
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  text-align: center; 
 }
 
-#meme-img-container {
-  width: 480px;
-  height: 480px;
-  margin: 40px auto;
-}
-
-#meme-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  overflow: hidden;
-}
-
-.title {
-  color:black;
-  margin-bottom: 0px;
-  margin-top: 32px;
-}
-
-.main-content {
-  height: 100%;
-  width: 70%;
-  border: 20px;
-  border-color: pink;
-  border-style: outset;
-  border-radius: 20px;
-  padding: 50px 50px 50px 50px;
+.main > div {
+  z-index: 2;
+  width: 500px;
+  max-width: 80%;
   margin: 0 auto;
-  text-align: center;
-  overflow: hidden;
 }
 
-.spacer {
-  padding-top: 150px;
+.main h1 {
+  /*
+    32 default h1 size
+  */
+  font-size: 46px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 0.5rem; }
+.main h2 {
+  font-size: 	24px;
+  line-height: 1;
+  margin-bottom: 4rem; }
+.main h3 {
+  font-size: 18px;
+  color: grey;
+  margin-bottom: 0;
+}
+.main p {
+  font-size: 17px;
+  text-align: justify;
+}
+
+.main a {
+  color: #fff;
+  position: relative;
+  font-weight: 700;
+}
+
+.work {
+  margin-top: 40px;
+}
+
+.work br {
+  padding-bottom: 20px;
+}
+
+.contact {
+  margin-top: 80px;
+}
+
+.contact a {
+  padding-right: 50px;
+  padding-left: 50px;
+  text-decoration: none;
+  color: grey;
+}
+
+#circle-one {
+  width: 280px;
+  height: 280px;
+  background: #1DB954;
+  top: -50px;
+  left: -50px;
+  position: absolute;
+  -moz-border-radius: 140px; 
+  -webkit-border-radius: 140px; 
+  border-radius: 140px;
+}
+
+#circle-two {
+  width: 200px;
+  height: 200px;
+  background: #F26BDE;
+  bottom: 100px;
+  left: 100px;
+  position: absolute;
+  -moz-border-radius: 100px; 
+  -webkit-border-radius: 100px; 
+  border-radius: 100px;
+}
+
+#circle-three {
+  width: 400px;
+  height: 400px;
+  background: #567BDB;
+  top: 0;
+  right: -50px;
+  position: absolute;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px; 
+  border-radius: 200px;
+}
+
+.circle:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact a {
+    padding-right: 5px;
+    padding-left: 5px;
+    text-decoration: none;
+    color: grey;
+  }
+  #circle-two {
+    background: #000;
+  }
 }

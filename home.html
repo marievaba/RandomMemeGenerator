@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Tangerine:300,400" rel="stylesheet">
-    <script type="text/javascript" src="js/meme-generator.js"></script>
-    <link rel="stylesheet" type="text/css" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link rel="stylesheet" type="text/css" href="styles/slider.css">
-    <link rel="stylesheet" type="text/css" href="styles/loader.css">
-    <link rel="stylesheet" type="text/css" href="styles/button.css">
+
+    <script type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
-    <div class="main-content">
-      <h1 class="title">This is a random meme generator</h1>
-      <div class="slider-container">
-        <div class="emoticons">
-          <i id="first" class="far fa-frown first"></i>
-          <i id="second" class="far fa-meh second"></i>
-          <i id="third" class="far fa-smile third"></i>
+    <div id="circle-one" class="circle"></div>
+    <div id="circle-two" class="circle"></div>
+    <div id="circle-three" class="circle"></div>
+    <div class="main">
+      <div>
+        <h1>Marie Vabamägi</h1>
+        <h2>UX/UI designer</h2>
+        <p>I am Marie, 22 years old. I have studied graphic design in 
+          <a href="https://www.tartukunstikool.ee/" target="_blank">Tartu Art School.</a> Currently I study UX in  
+          <a href="https://en.voco.ee/" target="_blank">VOCO</a>. I very much like minimalistic design. This portfolio shows some of my designs and prototypes. </p>
+        <div class="work">
+          <h3>Noteable work</h3>
+          <a href="javascript:openGallery()">Gallery</a>
+          </br>
+          <a href="javascript:openPrototypes()">Prototypes</a>
+          </br>
+          <a href="javascript:openWebsite()">First Website</a>
+          </br>
         </div>
-        <input
-          type="range" min="1" max="100" value="50" class="slider" id="slider"
-          oninput="highlightEmoticon(this.value)"
-        >
-      </div>
-      <button class="button" onClick="generando()" id="button" disabled>
-        show me the magic!
-      </button>
-      <div id="meme-img-container">
-        <div class="spacer"></div>
-        <div id="loader"></div>
+        <div class="contact">
+          <a href="mailto:marie.vaba@gmail.com">email</a>
+          <a href="https://www.instagram.com/libutigu/" target="_blank">instagram</a>
+          <a href="https://www.linkedin.com/in/marievaba/" target="_blank">linkedin</a>
+        </div>
       </div>
     </div>
-  </body>
+</body>
 </html>

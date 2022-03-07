@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Tangerine:300,400" rel="stylesheet">
+    <script type="text/javascript" src="js/meme-generator.js"></script>
+    <link rel="stylesheet" type="text/css" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/meme-main.css">
+    <link rel="stylesheet" type="text/css" href="styles/slider.css">
+    <link rel="stylesheet" type="text/css" href="styles/loader.css">
+    <link rel="stylesheet" type="text/css" href="styles/button.css">
+  </head>
+  <body>
+    <div class="main-content">
+      <h1 class="title">This is a random meme generator</h1>
+      <div class="slider-container">
+        <div class="emoticons">
+          <i id="first" class="far fa-frown first"></i>
+          <i id="second" class="far fa-meh second"></i>
+          <i id="third" class="far fa-smile third"></i>
+        </div>
+        <input
+          type="range" min="1" max="100" value="50" class="slider" id="slider"
+          oninput="highlightEmoticon(this.value)"
+        >
+      </div>
+      <button class="button" onClick="generando()" id="button" disabled>
+        show me the magic!
+      </button>
+      <div id="meme-img-container">
+        <div class="spacer"></div>
+        <div id="loader"></div>
+      </div>
+    </div>
+  </body>
+</html>
